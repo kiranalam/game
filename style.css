@@ -1,0 +1,52 @@
+body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #111;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    #menu, #gameOverScreen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    #scoreDisplay {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      display: none;
+    }
+
+    #gameCanvas {
+      background-color: #222;
+      display: none;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .easy { background-color: green; }
+    .medium { background-color: orange; }
+    .hard { background-color: red; }
+
+    @media (max-width: 600px) {
+      canvas {
+        width: 90vw;
+        height: 90vw;
+      }
+    }
